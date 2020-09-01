@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* con esta propiedad establecemos que el objeto no afecte su tamaño independiente de las propiedades que se definan, por ejemplo un padding*/
+}
+
+.fondo{
+   background: rgb(211, 109, 211);
+}
+
+.letra>ul>li>a{
+    color: darkred !important;  /* el !Important nos permite forzar aplicar el estilo personalizado sobre el del framework "boostrap" */
+}
+
+.colorboton{
+    background:black; /*rgba(51, 47, 47, 0.753);*/
+    color: white;
+}
+
+.colorboton:hover{
+    background:rgba(51, 47, 47, 0.37);
+    color: white;
+}
+
+.img-icon{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+} 
