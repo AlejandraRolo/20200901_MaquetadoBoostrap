@@ -4,6 +4,13 @@
     box-sizing: border-box; /* con esta propiedad establecemos que el objeto no afecte su tamaño independiente de las propiedades que se definan, por ejemplo un padding*/
 }
 
+/* reponsive de imagenes para CSS vainilla
+img{
+    max-width: 100%;
+}
+Para crear el mismo efecto utilizando boostrap utilizamos la clase "img-fluid" dentro de la etiqueta imagen
+*/
+
 .fondo{
    background: rgb(211, 109, 211);
 }
@@ -12,12 +19,12 @@
     color: darkred !important;  /* el !Important nos permite forzar aplicar el estilo personalizado sobre el del framework "boostrap" */
 }
 
-.colorboton{
+.boton-buscar{
     background:black; /*rgba(51, 47, 47, 0.753);*/
     color: white;
 }
 
-.colorboton:hover{
+.boton-buscar:hover{
     background:rgba(51, 47, 47, 0.37);
     color: white;
 }
@@ -27,3 +34,11 @@
     width: 40px;
     border-radius: 50px;
 } 
+
+.fondo1{
+    background: orange;
+}
+
+.fondo2{
+    background: yellow;
+}

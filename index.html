@@ -60,16 +60,67 @@
               </ul>
               <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Buscar Artista" aria-label="Search">
-                <button class="btn my-2 my-sm-0 colorboton" type="submit">Buscar</button> <!--btn-outline-success: clase nativa de boostrap-->
+                <button class="btn my-2 my-sm-0 boton-buscar" type="submit">Buscar</button> <!--btn-outline-success: clase nativa de boostrap-->
               </form>
             </div>
           </nav>
     </header>
 
+    <main>
+        <!-- Fila  -->
+        <!-- container: ajusta el contenido de modo centralizado, container-fluid: ajusta el contenido al ancho del 100%   
+            container-lg: deja una margen a cada lado para esta medida en especifico
+            container-md: deja una margen a cada lado para esta medida en especifico
+            container-sm: deja una margen a cada lado para esta medida en especifico
+        -->
+        <div class="container-md">
+            <div class="row my-4 border rounded border-primary p-3">
+                <!-- lg : pantallas >992px: Portatiles o Escritorios
+                    md : pantallas >=768px: Tablets Ipads
+                    sm : pantallas < 576px: Celulares -->
+                <!-- 
+                    order-2 order-sm-1  : De esta manera podría cambiar el orden en que mostrarán los elementos
+                    order-1 order-sm-2  : pero desde la medida sm en adelante se mostrarán en orden
+                    order-4 order-sm-3  :
+                    order-3 order-sm-4  :
+                -->
+                <div class="col-sm-12 col-md-6 col-lg-3 order-2 order-sm-1 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores neque unde culpa ipsum modi fugiat dolore aspernatur provident ratione, aperiam incidunt consequatur possimus aliquid non vel expedita facilis dicta repellat!</div>
+                <div class="col-sm-12 col-md-6 col-lg-3 order-1 order-sm-2 my-2"><img class="img-fluid" src="./assets/imagenes/guitarraensolo.jpg" alt="guitarraensolo"></div>
+                <div class="col-sm-12 col-md-6 col-lg-3 order-4 order-sm-3 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora corrupti molestias nostrum consectetur dolor ratione numquam rem, mollitia rerum eum totam deserunt. Perspiciatis numquam hic quibusdam nobis aspernatur deleniti repudiandae!</div>
+                <div class="col-sm-12 col-md-6 col-lg-3 order-3 order-sm-4 my-2"><img class="img-fluid" src="./assets/imagenes/violin.jpg" alt=""></div>
+            </div>
+        </div>
+
+        <!-- Para centrar contenedores
+            container-md 
+            offset-2    
+        -->
+        <div class="container-fluid">
+            <div class="row my-4 border rounded border-primary p-3">
+                <div class="col-sm-12 col-md-6 col-lg-4 order-1 order-sm-1 my-2 fondo1">TEXTO1</div>
+                <div class="col-sm-12 col-md-6 col-lg-4 order-3 order-sm-2 my-2"><img class="img-fluid" src="./assets/imagenes/enrelajacion.jpg" alt="guitarraensolo"></div>
+                <div class="col-sm-12 col-md-6 container-md col-lg-4 order-2 order-sm-3 my-2 fondo2">TEXTO2</div>
+            </div>
+        <div>
+
+        <div class="container">
+            <div class="row my-4 border rounded border-primary p-3">
+                <div class="embed-responsive embed-responsive-16by9 col-sm-12 container-sm col-md-12 col-lg-6 order-2 order-lg-1 my-2">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NUVCQXMUVnI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-sm-12 container-sm col-md-12 col-lg-6 order-1 order-lg-2 my-2">
+                    <p><b>Música electrónica</b></p>
+                    La música electrónica es aquel tipo de música que emplea instrumentos musicales electrónicos y tecnología musical electrónica para su producción e interpretación. En general, se puede distinguir entre el sonido producido mediante la utilización de medios electromecánicos de aquel producido mediante tecnología electrónica, la cual también puede ser mezclada. Algunos ejemplos de dispositivos que producen sonido electro-mecánicamente son el telarmonio, el órgano Hammond y la guitarra eléctrica. 
+                </div>
+            </div>
+        <div>
+
+    </main>
+
     <!-- Se linkea de forma externa -->
     <script src="./assets/js/jquey-3.5.1/jquery.min.js"></script>  <!--Va primero Jquery-->
     <script src="./assets/js/popper-1.16.1/popper.min.js"></script>
-    <script src="./assets/js/bootstrap-4.5.2/bootstrap.min.js"></script>  <!--Va primero Jquery-->
+    <script src="./assets/js/bootstrap-4.5.2/bootstrap.min.js"></script>
     <script src="./assets/js/index.js"></script> <!--Conectamos la hoja de estilos-->
 </body>
 </html>
