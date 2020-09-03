@@ -35,10 +35,24 @@ Para crear el mismo efecto utilizando boostrap utilizamos la clase "img-fluid" d
     border-radius: 50px;
 } 
 
-.fondo1{
-    background: orange;
+.fondo-form{
+    color:white;
+    background: rgb(211, 109, 211);
+    background: linear-gradient(top, rgba(176,13,201,1) 0%, rgba(107,7,122,1) 100%);
+    background: linear-gradient(to bottom, rgba(176, 13, 201, 0.651) 0%, rgba(107,7,122,1) 100%); 
 }
 
-.fondo2{
-    background: yellow;
+.card-img-top{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-self: center;
+}
+
+.lista-redes{
+    list-style-type: none;
+}
+
+.img-banner{
+    height: 500px;
 }
